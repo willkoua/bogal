@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+::ng-deep body {
+  background-color: #111;
+}
+
+.buildin {
+  min-height: 100vh;
+  background: url('../../../../assets/images/bogal_programming_person.jpg') no-repeat fixed center ;
+  color: #eee;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+
+  &__title {
+    margin-bottom: 20px;
+
+    &__green {
+      color: green !important;
+    }
+    h1 {
+      display: inline-block;
+      font-weight: 500;
+      font-size: 4em;
+      margin: 0;
+    }
+    h3 {
+      font-weight: 100;
+      font-size: 1.5em;
+      margin: 0;
+    }
+  }
+
+  &__body {
+    font-size: 5em;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &__green {
+      color: green;
+    }
+
+    &__weight {
+      font-weight: bolder;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .buildin {
+    &__title {
+      margin-bottom: 125px;
+    }
+
+    &__body {
+      font-size: 3em;
+    }
+  }
+}
