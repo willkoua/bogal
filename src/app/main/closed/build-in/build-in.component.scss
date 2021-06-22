@@ -11,23 +11,29 @@
   padding: 0 20px;
   font-family: 'Poppins', sans-serif;
 
-  &__title {
-    margin-bottom: 20px;
+  &__bloc1 {
+    &__title {
+      margin-bottom: 20px;
 
-    &__green {
-      color: green !important;
+      &__green {
+        color: green !important;
+      }
+      h1 {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 4em;
+        margin: 0;
+      }
+      h3 {
+        font-weight: 100;
+        font-size: 1.5em;
+        margin: 0;
+      }
     }
-    h1 {
-      display: inline-block;
-      font-weight: 500;
-      font-size: 4em;
-      margin: 0;
-    }
-    h3 {
-      font-weight: 100;
-      font-size: 1.5em;
-      margin: 0;
-    }
+  }
+
+  &__bloc2 {
+    font-weight: 100;
   }
 
   &__body {
