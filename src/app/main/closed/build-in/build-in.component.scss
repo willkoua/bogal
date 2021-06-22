@@ -11,38 +11,42 @@
   padding: 0 20px;
   font-family: 'Poppins', sans-serif;
 
-  &__bloc1 {
-    &__title {
-      margin-bottom: 20px;
+  &__title {
+    margin-bottom: 20px;
 
-      &__green {
-        color: green !important;
-      }
-      h1 {
-        display: inline-block;
-        font-weight: 500;
-        font-size: 4em;
-        margin: 0;
-      }
-      h3 {
-        font-weight: 100;
-        font-size: 1.5em;
-        margin: 0;
-      }
+    &__green {
+      color: green !important;
+    }
+    h1 {
+      font-weight: 500;
+      font-size: 4em;
+      margin: 0;
+    }
+    h3 {
+      font-weight: 100;
+      font-size: 1.5em;
+      margin: 0;
     }
   }
 
-  &__bloc2 {
-    font-weight: 100;
-  }
-
   &__body {
-    font-size: 5em;
-    margin: 0 auto;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    &__services {
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+    &__contact, &__services {
+      font-weight: 100;
+    }
+
+    &__message {
+      font-size: 5em;
+      margin: 0 auto;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
 
     &__green {
       color: green;
@@ -56,12 +60,25 @@
 
 @media (max-width: 575px) {
   .buildin {
-    &__title {
-      margin-bottom: 125px;
-    }
 
     &__body {
-      font-size: 3em;
+
+      &__contact, &__services {
+        background-color: rgba(1, 1, 1, 0.5);
+      }
+
+      &__services {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      &__message {
+        font-size: 3em;
+
+        margin: 0;
+        position: sticky;
+        transform: none;
+      }
     }
   }
 }
