@@ -1,7 +1,10 @@
 <div class="header">
   <div class="header__menu">
     <div class="header__menu__btn">
-      <a (click)="toggleMenu()"><span class="material-icons">menu</span></a>
+      <a (click)="toggleMenu()">
+        <span *ngIf="!showMenu" class="material-icons">menu</span>
+        <span *ngIf="showMenu" class="material-icons">close</span>
+      </a>
     </div>
   </div>
   <div class="header__logo">

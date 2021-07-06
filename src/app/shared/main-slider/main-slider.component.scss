@@ -1,0 +1,24 @@
+.slidernav {
+
+
+  &__body {
+    position: relative;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        width: inherit;
+
+        a {
+          width: 100%;
+          padding: 20px 0;
+          display: inline-block;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}

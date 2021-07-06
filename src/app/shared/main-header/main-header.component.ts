@@ -7,7 +7,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class MainHeaderComponent implements OnInit {
   @Output() activeMenu: EventEmitter<boolean> = new EventEmitter<boolean>();
-  @Input() showMenu = false;
+  showMenu = false;
 
   constructor() { }
 
@@ -15,6 +15,7 @@ export class MainHeaderComponent implements OnInit {
   }
 
   toggleMenu(): void {
-    this.activeMenu.emit(!this.showMenu);
+    this.showMenu = !this.showMenu;
+    this.activeMenu.emit(this.showMenu);
   }
 }

@@ -1,5 +1,7 @@
 <div class="container">
-  <div class="container__header"><app-main-slider ></app-main-slider></div>
+  <div class="container__header" *ngIf="showMenu">
+    <app-main-slider></app-main-slider>
+  </div>
 
   <div class="container__body">
     <app-main-header (activeMenu)="toggleMenu()"></app-main-header>
