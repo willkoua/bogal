@@ -1,0 +1,34 @@
+.header {
+  position: sticky;
+  z-index: 100;
+  overflow: hidden;
+  display: flex;
+  padding: 20px 50px;
+
+  &__menu, &__second {
+    padding-top: 10px;
+  }
+
+  &__menu {
+    &__btn {
+      //padding: 10px 50px;
+    }
+  }
+
+  &__logo {
+    flex-grow: 4;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+  }
+
+  &__second {
+    a {
+      margin: 0;
+      float: left;
+      text-align: center;
+      line-height: 25px;
+      padding: 0 10px;
+    }
+  }
+}
