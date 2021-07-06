@@ -1,0 +1,20 @@
+.container {
+  min-height: 100vh;
+  background-color: yellow;
+
+  &__header {
+    //background: url("../../../assets/images/bg_white_transparent.png");
+    background-color: green;
+    position: absolute;
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__body {
+    min-height: inherit;
+    background-color: pink;
+  }
+}

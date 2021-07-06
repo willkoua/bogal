@@ -1,11 +1,9 @@
 <div class="container">
-  <div class="container__header">
-    <app-main-header></app-main-header>
-  </div>
+  <div class="container__header"><app-main-slider ></app-main-slider></div>
+
   <div class="container__body">
+    <app-main-header (activeMenu)="toggleMenu()"></app-main-header>
     <router-outlet></router-outlet>
-  </div>
-  <div class="container__footer">
     <app-main-footer></app-main-footer>
   </div>
 </div>
