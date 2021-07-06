@@ -2,13 +2,15 @@
   <div class="header__menu">
     <div class="header__menu__btn">
       <a (click)="toggleMenu()">
-        <span *ngIf="!showMenu" class="material-icons">menu</span>
-        <span *ngIf="showMenu" class="material-icons">close</span>
+        <span *ngIf="showBtn" [@enter] (@enter.done)="enterShowDone($event)" [@leave]
+              (@leave.done)="leaveShowDone($event)" class="material-icons">menu</span>
+        <span *ngIf="closeBtn" [@enter] (@enter.done)="enterCloseDone($event)" [@leave]
+              (@leave.done)="leaveCloseDone($event)" class="material-icons">close</span>
       </a>
     </div>
   </div>
   <div class="header__logo">
-    <div class="header__logo__text"><a href="#">BOGAL Inc.</a></div>
+    <div class="header__logo__text"><a href="#">BOGAL</a></div>
   </div>
   <div class="header__second">
     <a href="">menu 1</a>
