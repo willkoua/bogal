@@ -1,3 +1,45 @@
-.home {
+@import '../../../../styles';
 
+.home {
+  &__presentation {
+    display: flex;
+    padding-top: 200px;
+
+    &__text, &__img {
+      width: 100%;
+    }
+
+    &__text {
+      padding: 0 20px;
+
+      h1, h2 {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 10em;
+        color: mat-color($bogal-primary, 800);
+      }
+      h2 {
+        font-size: 3em;
+        position: relative;
+        bottom: 65px;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+    }
+
+    &__img {
+      &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
 }
