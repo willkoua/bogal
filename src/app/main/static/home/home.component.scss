@@ -4,6 +4,8 @@
   &__presentation {
     display: flex;
     padding-top: 200px;
+    background: url("../../../../assets/images/bg_bogal_presentation.png") no-repeat;
+    background-size: 100%;
 
     &__text, &__img {
       width: 100%;
