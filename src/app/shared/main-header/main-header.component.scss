@@ -4,6 +4,7 @@
   display: flex;
   padding: 20px 50px;
   width: 100%;
+  transition: all 1s;
 
   &__menu, &__second {
     padding-top: 10px;
@@ -35,6 +36,18 @@
       text-align: center;
       line-height: 25px;
       padding: 0 10px;
+    }
+  }
+
+  &-sticky {
+    background: white;
+    //padding: 15px 0;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+
+    &__menu {
+      &__nav {
+        color: var(--bs-white);
+      }
     }
   }
 }

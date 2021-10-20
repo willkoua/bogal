@@ -1,5 +1,6 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, HostListener, Inject, OnInit, Output} from '@angular/core';
 import { fadeInOnEnterAnimation, fadeOutOnLeaveAnimation } from 'angular-animations';
+import {DOCUMENT} from '@angular/common';
 
 @Component({
   selector: 'app-main-header',
@@ -16,9 +17,21 @@ export class MainHeaderComponent implements OnInit {
   showBtn = true;
   showMenu = false;
 
-  constructor() { }
+  constructor(@Inject(DOCUMENT) document) { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e) {
+    console.log('llalalalala');
+    if (window.pageYOffset > 150) {
+      const element = document.getElementById('header');
+      element.classList.add('header-sticky');
+    } else {
+      const element = document.getElementById('header');
+      element.classList.remove('header-sticky');
+    }
   }
 
   toggleMenu(): void {
