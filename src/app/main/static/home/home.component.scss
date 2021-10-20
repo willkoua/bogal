@@ -1,15 +1,18 @@
 @import '../../../../styles';
 
 .home {
-  &__presentation {
+  .container>div {
     display: flex;
-    padding-top: 200px;
-    background: url("../../../../assets/images/bg_bogal_presentation.png") no-repeat;
-    background-size: 100%;
+    //flex-flow: column wrap;
+  }
 
-    &__text, &__img {
+  &__presentation {
+    padding-top: 200px;
+    background-color: mat-color($bogal-primary, 50);
+
+    /*&__text, &__img {
       width: 100%;
-    }
+    }*/
 
     &__text {
       padding: 0 20px;
@@ -36,10 +39,71 @@
     &__img {
       &__wrapper {
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: wrap;
 
         img {
           width: 50%;
+        }
+      }
+    }
+  }
+
+  &__about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 600px;
+
+    &__container {
+      display: flex;
+      width: 70%;
+
+      &__text, &__img {
+        width: 100%;
+        align-self: center;
+      }
+
+      &__text {
+        padding: 10px;
+
+      }
+
+      &__img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .home {
+    .container>div {
+      display: flex;
+      flex-flow: column wrap;
+    }
+
+    &__presentation {
+      padding-top: 100px;
+      background-color: mat-color($bogal-primary, 50);
+
+      /*&__text, &__img {
+        width: 100%;
+      }*/
+
+      &__text {
+        h1 {
+          font-size: 5em;
+        }
+        h2 {
+          font-size: 1.5em;
+          bottom: 30px;
+        }
+
+        p {
+          font-size: 1em;
         }
       }
     }
