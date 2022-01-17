@@ -24,7 +24,6 @@ export class MainHeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-    console.log('llalalalala');
     if (window.pageYOffset > 150) {
       const element = document.getElementById('header');
       element.classList.add('header-sticky');
