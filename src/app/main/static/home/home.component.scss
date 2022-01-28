@@ -16,16 +16,26 @@
     }
   }
 
+  &__blanc {
+    background: url("../../../../assets/images/bogal_fond_blanc.png") no-repeat;
+    width: 100%;
+    height: 187px;
+    position: relative;
+    top: -187px;
+    background-size: 100%;
+  }
+
   &__presentation {
-    min-height: 85vh !important;
+    min-height: 100vh !important;
     padding-top: 200px;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: mat-color($bogal-primary, 50);
+    background: url("../../../../assets/images/bogal_home_about.png") no-repeat rgba(46, 125, 50, .5);
+    background-size: 100%;
+    margin-bottom: 0 !important;
 
     &__container>div {
       display: flex;
-      //flex-flow: column wrap;
     }
 
     &__container {
@@ -42,11 +52,20 @@
         h2 {
           font-size: 3em;
           position: relative;
-          bottom: 65px;
+          bottom: 45px;
         }
 
         p {
           font-size: 1.5em;
+          background-color: rgba(0, 0, 0, .2);
+          color: white;
+          display: inline-block;
+          padding: 0 10px;
+
+          span {
+            font-weight: bold;
+            color: mat-color($bogal-primary, 800);
+          }
         }
       }
 
@@ -55,9 +74,7 @@
           display: flex;
           flex-flow: wrap;
 
-          img {
-            width: 50%;
-          }
+          img { width: 50%; }
         }
       }
     }
@@ -72,9 +89,13 @@
         display: flex;
         justify-content: center;
         width: 70%;
+        background-color: mat-color($bogal-primary, 50);
 
-        &__text { width: 60%; }
-        &__img img { width: 100%; }
+        &__text {
+          width: 60%;
+          padding-left: 30px;
+        }
+        //&__img img { width: 100%; }
       }
     }
   }
@@ -89,25 +110,21 @@
       h4 {
         font-weight: normal;
         margin: 0;
+        font-size: 1.2em;
       }
     }
   }
 
   &__services {
     min-height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 
     &__body {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-
       &__service {
         text-align: center;
-        img { width: 50%; }
 
+        h3 { font-size: 1.2em; }
+
+        div { img { width: 100%; } }
         div:nth-child(3) {
           ul {
             list-style: none;
@@ -117,9 +134,7 @@
               padding: 10px 0;
             }
 
-            li:nth-child(even) {
-              background-color: mat-color($bogal-primary, 50);
-            }
+            li:nth-child(even) { background-color: mat-color($bogal-primary, 50); }
           }
         }
       }
@@ -128,20 +143,27 @@
 
   &__customer {
     &__body {
-      display: flex;
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto;
+      text-align: center;
 
-      div {
-        text-align: center;
-        img { width: 60%; }
+      &__mobile { display: none; }
+
+      &__desktop {
+        display: inline-block;
+
+        ul {
+          li {
+            width: 12%;
+
+            img { width: 100%; }
+          }
+        }
       }
-      div:last-child {
-        padding-top: 40px;
-        img { width: 100%; }
-      }
+
     }
+  }
+
+  &__contact {
+    background-color: mat-color($bogal-primary, 50);
   }
 }
 
@@ -164,6 +186,17 @@
       }
     }
 
+    &__presentation {
+      min-height: 85vh !important;
+      padding-top: 50%;
+      margin-bottom: 0 !important;
+    }
+
+    &__blanc {
+      height: 45px;
+      top: -45px;
+    }
+
     &__about {
       &__header { margin-bottom: 0; }
 
@@ -178,6 +211,23 @@
 
           &__text { width: 100%; }
         }
+      }
+    }
+
+    &__customer {
+      &__body {
+        &__mobile {
+          display: inline-block;
+
+          ul {
+            width: 50%;
+            margin-left: 25%;
+
+            li { img { width: 100%; } }
+          }
+        }
+
+        &__desktop { display: none; }
       }
     }
   }
