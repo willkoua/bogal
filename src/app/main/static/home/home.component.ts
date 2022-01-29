@@ -48,13 +48,13 @@ export class HomeComponent implements OnInit {
         if (response === 'sended') {
           this.toastService.success('Email envoyé');
         } else {
-          this.toastService.error('Une erreur est survenue lor de l,envoie de l\'email');
+          this.toastService.error('Une erreur est survenue lor de l\'envoie de l\'email');
         }
         this.submitted = false;
       },
       error => {
         console.log(error.message);
-        this.toastService.error('Une erreur est survenue lor de l,envoie de l\'email');
+        this.toastService.error('Une erreur est survenue lor de l\'envoie de l\'email');
         this.submitted = false;
       }
     );

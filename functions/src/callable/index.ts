@@ -1,1 +1,1 @@
-export {contactus} from "./emails/support";
+export {contactus} from './emails/support';
