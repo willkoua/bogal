@@ -12,6 +12,7 @@
 
       h2 {
         font-size: 2em;
+        color: mat-color($bogal-primary, 800);
       }
     }
   }
@@ -53,6 +54,7 @@
           font-size: 3em;
           position: relative;
           bottom: 45px;
+          color: black;
         }
 
         p {
