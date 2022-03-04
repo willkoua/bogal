@@ -1,11 +1,12 @@
-<div class="slidernav">
+<div class="d-flex align-items-center slidernav">
   <div class="slidernav__body">
     <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">Qui sommes nous?</a></li>
-      <li><a href="#">Nos valeurs</a></li>
-      <li><a href="#">Nos services</a></li>
+      <li><a (click)="toggleMenu()" href="#home">Accueil</a></li>
+      <li><a (click)="toggleMenu()" href="#about">Qui sommes nous?</a></li>
+      <li><a (click)="toggleMenu()" href="#values">Nos valeurs</a></li>
+      <li><a (click)="toggleMenu()" href="#service">Nos services</a></li>
+      <li><a (click)="toggleMenu()" href="#contact">Contactez-nous</a></li>
     </ul>
   </div>
-  <div class="slidernav__footer"></div>
+<!--  <div class="slidernav__footer"></div>-->
 </div>

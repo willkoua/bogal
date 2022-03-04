@@ -1,4 +1,4 @@
-<div class="home">
+<div id="home" class="home">
   <section class="home__presentation">
     <div class="home__presentation__container">
       <div>
@@ -23,7 +23,7 @@
 
   </section>
 
-  <div class="home__blanc"></div>
+  <div id="about" class="home__blanc"></div>
 
   <section class="home__about">
     <div class="home__about__header">
@@ -44,7 +44,7 @@
     </div>
   </section>
 
-  <section class="home__values">
+  <section id="values" class="home__values">
     <div class="home__values__header">
       <h2>Nos valeurs</h2>
       <div>Nous gardons en tête nos objectifs afin de s'assurer d'offrir à nos clients un qualité de service irréprochable et professionel.</div>
@@ -66,7 +66,7 @@
     </div>
   </section>
 
-  <section class="home__services">
+  <section id="service" class="home__services">
     <div class="container">
       <div class="home__services__header">
         <h2>Services</h2>
@@ -80,7 +80,6 @@
             <ul>
               <li>Analyse de besoins</li>
               <li>Gestion de projets</li>
-              <li>Gestion SCRUM</li>
               <li>Rétro-ingénieurie</li>
             </ul>
           </div>
@@ -152,7 +151,7 @@
     </div>
   </section>
 
-  <section class="home__contact">
+  <section id="contact" class="home__contact">
     <div class="home__contact__container">
       <div class="home__contact__header">
         <h2>Nous contacter</h2>
@@ -161,55 +160,67 @@
 
       <div class="container home__contact__body">
         <div class="d-flex justify-content-center">
-          <form [formGroup]="cuForm" (ngSubmit)="onSubmit()">
-            <div class="row gy-4">
-
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" formControlName="name"
-                       [ngClass]="{ 'is-invalid': submitted && f.name.errors }"
-                       placeholder="Nom" required>
-                <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
-                  <div *ngIf="f.name.errors.required">Nom requis</div>
+          <div class="w-50 home__contact__body__infos">
+            <h4 class="mb-3">Informations générales</h4>
+            <dl>
+              <dt class="text-success">Téléphone:</dt>
+              <dd>(514) 431-9459</dd>
+              <dt class="text-success">Email:</dt>
+              <dd>contact@bogal.ca</dd>
+            </dl>
+          </div>
+          <div class="home__contact__body__form">
+            <form [formGroup]="cuForm" (ngSubmit)="onSubmit()">
+              <h4 class="mb-3 text-center">Envoyez-nous un courriel</h4>
+              <hr>
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" formControlName="name"
+                         [ngClass]="{ 'is-invalid': submitted && f.name.errors }"
+                         placeholder="Nom" required>
+                  <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                    <div *ngIf="f.name.errors.required">Nom requis</div>
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" formControlName="email"
-                       [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
-                       placeholder="Email" required>
-                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                  <div *ngIf="f.email.errors.email">Erreur Email</div>
-                  <div *ngIf="f.email.errors.required">Email requis</div>
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" formControlName="email"
+                         [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                         placeholder="Email" required>
+                  <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.email">Erreur Email</div>
+                    <div *ngIf="f.email.errors.required">Email requis</div>
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-md-12">
-                <input type="email" class="form-control" name="email" formControlName="subject"
-                       [ngClass]="{ 'is-invalid': submitted && f.subject.errors }"
-                       placeholder="Sujet" required>
-                <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
-                  <div *ngIf="f.subject.errors.required">Sujet requis</div>
+                <div class="col-md-12">
+                  <input type="email" class="form-control" name="email" formControlName="subject"
+                         [ngClass]="{ 'is-invalid': submitted && f.subject.errors }"
+                         placeholder="Sujet" required>
+                  <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+                    <div *ngIf="f.subject.errors.required">Sujet requis</div>
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-md-12">
+                <div class="col-md-12">
                 <textarea class="form-control" name="message" rows="6" formControlName="message"
                           [ngClass]="{ 'is-invalid': submitted && f.message.errors }"
                           placeholder="Message" required></textarea>
-                <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
-                  <div *ngIf="f.message.errors.required">Message requis</div>
+                  <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                    <div *ngIf="f.message.errors.required">Message requis</div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button class="btn btn-success" type="submit" [disabled]="submitted">
+                    <span *ngIf="!submitted">Envoyer</span>
+                    <span *ngIf="submitted" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span *ngIf="submitted">Loading...</span>
+                  </button>
                 </div>
               </div>
-
-              <div class="col-md-12 text-center">
-                <button class="btn btn-success" type="submit" [disabled]="submitted">
-                  <span *ngIf="!submitted">Envoyer</span>
-                  <span *ngIf="submitted" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                  <span *ngIf="submitted">Loading...</span>
-                </button>
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
