@@ -40,3 +40,12 @@ body {
   font-weight: 100;
   font-family: 'Poppins', Roboto, "Helvetica Neue", sans-serif;
 }
+
+a {
+  color: mat-color($bogal-primary, 800);
+  text-decoration: none;
+}
+
+a:hover {
+  color: mat-color($bogal-primary, 500);
+}

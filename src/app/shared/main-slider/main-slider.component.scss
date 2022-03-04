@@ -1,7 +1,10 @@
+@import '../../../styles';
+
 .slidernav {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   z-index: 1;
+  color: #2e7d32;
   left: 0;
   top: 0;
   position: fixed;
@@ -9,8 +12,8 @@
   justify-content: center;
   align-items: center;
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(255,255,255); /* Fallback color */
-  background-color: rgba(255,255,255,0.8); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
 
   &__body {
     text-align: center;
@@ -21,13 +24,19 @@
       list-style-type: none;
 
       li {
-        width: inherit;
+        margin-bottom: 10px;
 
         a {
           width: 100%;
-          padding: 20px 0;
+          padding: 7px 5px;
+          background-color: mat-color($bogal-primary, 800);
           display: inline-block;
           font-size: 1.5em;
+          color: yellow;
+        }
+
+        a:hover {
+          background-color: mat-color($bogal-primary, 500);
         }
       }
     }
