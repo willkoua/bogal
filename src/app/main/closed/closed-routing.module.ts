@@ -4,7 +4,7 @@ import {BuildInComponent} from './build-in/build-in.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'close',
     component: BuildInComponent,
   },
 ];

@@ -22,7 +22,7 @@ export const contactus = functions.https.onRequest((req: any, res: any) => {
     const message = req.body.message;
     const mailOptions = {
       from: `Support <${email}>`,
-      to: 'bogal.consulting@bogal.ca',
+      to: 'bogal.consulting@gmail.com',
       subject,
       html: `
           <p>
