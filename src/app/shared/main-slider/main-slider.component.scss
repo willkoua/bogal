@@ -1,5 +1,12 @@
 @import '../../../styles';
 
+* {
+  box-sizing: inherit;
+  transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function: ease;
+}
+
 .slidernav {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
@@ -26,18 +33,85 @@
       li {
         margin-bottom: 10px;
 
-        a {
+        /*a {
           width: 100%;
           padding: 7px 5px;
-          background-color: mat-color($bogal-primary, 800);
-          display: inline-block;
+          border-bottom: 1px solid;
+          line-height: 1.4;
           font-size: 1.5em;
-          color: yellow;
+          -webkit-transition: background 2s; !* For Safari 3.0 to 6.0 *!
+          transition: background 2s, color 2s;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          justify-content: center;
+          text-align: center;
+        }*/
+
+        a {
+          //background: rgba(white, 0);
+          //border-bottom: 1px solid yellow;
+          background-color: mat-color($bogal-primary, 800);
+          color: var(--bs-yellow);
+          line-height: 1.4;
+          padding: .17em;
+          text-decoration: none;
+
+          &:hover {
+            background: none;
+            color: yellow;
+          }
         }
 
-        a:hover {
-          background-color: mat-color($bogal-primary, 500);
+        .btn {
+          color: #fff;
+          cursor: pointer;
+          // display: block;
+          font-size:16px;
+          font-weight: 400;
+          line-height: 45px;
+          margin: 0 0 2em;
+          max-width: 160px;
+          position: relative;
+          text-decoration: none;
+          text-transform: uppercase;
+          width: 100%;
+
+          svg {
+            height: 50px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+
+          rect {
+            fill: none;
+            stroke: yellow;
+            stroke-width: 2;
+            stroke-dasharray: 422, 0;
+            transition: all 0.35s linear;
+          }
         }
+
+        .btn:hover {
+          background: none;
+          color: var(--bs-yellow);
+          font-weight: 900;
+          letter-spacing: 1px;
+
+          rect {
+            stroke-width: 5;
+            stroke-dasharray: 15, 310;
+            stroke-dashoffset: 48;
+            transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+          }
+        }
+
+        /*a:hover {
+          background-color: mat-color($bogal-primary, 800);
+          color: yellow;
+        }*/
       }
     }
   }
