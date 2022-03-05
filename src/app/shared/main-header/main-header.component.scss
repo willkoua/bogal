@@ -5,6 +5,7 @@
   padding: 20px 50px;
   width: 100%;
   transition: all 1s;
+  overflow: hidden;
 
   &__menu, &__second {
     padding-top: 10px;
@@ -49,5 +50,45 @@
         color: var(--bs-white);
       }
     }
+  }
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 0px 10px;
+    //position: static;
+    background-color: var(--bs-white);
+    /*&__menu {
+      &__btn {
+        a { cursor: pointer; }
+      }
+    }*/
+
+    &__logo {
+      a {font-size: .6em;}
+    }
+
+    /*&__second {
+      a {
+        margin: 0;
+        float: left;
+        text-align: center;
+        line-height: 25px;
+        padding: 0 10px;
+      }
+    }*/
+
+    /*&-sticky {
+      background: white;
+      //padding: 15px 0;
+      box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+
+      &__menu {
+        &__nav {
+          color: var(--bs-white);
+        }
+      }
+    }*/
   }
 }

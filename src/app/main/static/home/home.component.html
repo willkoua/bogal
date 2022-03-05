@@ -1,7 +1,7 @@
 <div id="home" class="home">
   <section class="home__presentation">
     <div class="home__presentation__container">
-      <div>
+      <div class="container">
         <div class="home__presentation__container__text">
           <h1>BOGAL</h1>
           <h2>Consulting Inc.</h2>
@@ -10,14 +10,14 @@
             d'outils développé sur mesure.
           </p>
         </div>
-        <div class="home__presentation__container__img">
-         <!-- <div class="home__presentation__container__img__wrapper">
+        <!--<div class="home__presentation__container__img">
+          <div class="home__presentation__container__img__wrapper">
             <img src="assets/images/bogal_spec.svg" alt="bogal spec">
             <img src="assets/images/bogal_conception.svg" alt="bogal conception">
             <img src="assets/images/bogal_team_code.svg" alt="bogal team">
             <img src="assets/images/bogal_app.svg" alt="bogal app">
-          </div>-->
-        </div>
+          </div>
+        </div>-->
       </div>
     </div>
 
@@ -26,48 +26,52 @@
   <div id="about" class="home__blanc"></div>
 
   <section class="home__about">
-    <div class="home__about__header">
-      <h2>Qui sommes-nous?</h2>
-    </div>
+    <div class="container">
+      <div class="home__about__header">
+        <h2>Qui sommes-nous?</h2>
+      </div>
 
-    <div class="home__about__body">
-      <div class="d-flex align-items-center home__about__body__container">
-        <div class="w-100 home__about__body__container__text">
-          <p>
-            <b>BOGAL Consulting Inc.</b> à été crée en 2019 par une équipe de jeune motivée ayant été formé dans les meilleures écoles d'ingénierie canadienne.
-            L'idée derrière ce projet est née de la volonté commune de développer des logiciels de manière professionnelle, structuré, à moindre coût
-            et surtout dans les meilleurs délais.
-          </p>
-          <p>
-            L'équipe est dynamique, travaillant avec les meilleures pratiques d'ingénierie dans le domaine du logiciel.
-            Notre objectif principal étant d'offrir les meilleurs services à nos clients afin de garantir leur totale satisfaction.
-          </p>
-        </div>
-        <div class="home__about__body__container__img">
-          <img src="assets/images/bogal_home_work_top.jpg" class="img-fluid" alt="">
+      <div class="home__about__body">
+        <div class="row home__about__body__container">
+          <div class="col-md-6 home__about__body__container__text">
+            <p>
+              <b>BOGAL Consulting Inc.</b> à été crée en 2019 par une équipe de jeune motivée ayant été formé dans les meilleures écoles d'ingénierie canadienne.
+              L'idée derrière ce projet est née de la volonté commune de développer des logiciels de manière professionnelle, structuré, à moindre coût
+              et surtout dans les meilleurs délais.
+            </p>
+            <p>
+              L'équipe est dynamique, travaillant avec les meilleures pratiques d'ingénierie dans le domaine du logiciel.
+              Notre objectif principal étant d'offrir les meilleurs services à nos clients afin de garantir leur totale satisfaction.
+            </p>
+          </div>
+          <div class="col-md-6 home__about__body__container__img">
+            <img src="assets/images/bogal_home_work_top.jpg" class="img-fluid" alt="">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <section id="values" class="home__values">
-    <div class="home__values__header">
-      <h2>Nos valeurs</h2>
-      <div>Nous gardons en tête nos objectifs afin de s'assurer d'offrir à nos clients un qualité de service irréprochable et professionel.</div>
-    </div>
+    <div class="container">
+      <div class="home__values__header">
+        <h2>Nos valeurs</h2>
+        <div>Nous gardons en tête nos objectifs afin de s'assurer d'offrir à nos clients un qualité de service irréprochable et professionel.</div>
+      </div>
 
-    <div class="home__values__body">
-      <div>
-        <img src="assets/images/bogal_home_meeting.svg" class="img-fluid" alt="">
-        <p>Respecter les <b>normes internationnales</b></p>
-      </div>
-      <div>
-        <img src="assets/images/bogal_home_quality.svg" class="img-fluid" alt="">
-        <p><b>Qualité</b> plutôt quantité</p>
-      </div>
-      <div>
-        <img src="assets/images/bogal_home_consulting.svg" class="img-fluid" alt="">
-        <p>Assurer la <b>satisfaction</b> de nos clients</p>
+      <div class="row home__values__body">
+        <div class="col-md-4">
+          <img src="assets/images/bogal_home_meeting.svg" class="img-fluid" alt="">
+          <p>Respecter les <b>normes internationnales</b></p>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/bogal_home_quality.svg" class="img-fluid" alt="">
+          <p><b>Qualité</b> plutôt quantité</p>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/images/bogal_home_consulting.svg" class="img-fluid" alt="">
+          <p>Assurer la <b>satisfaction</b> de nos clients</p>
+        </div>
       </div>
     </div>
   </section>
@@ -157,15 +161,15 @@
   </section>
 
   <section id="contact" class="home__contact">
-    <div class="home__contact__container">
+    <div class="container home__contact__container">
       <div class="home__contact__header">
         <h2>Nous contacter</h2>
         <div>Nous proposons une multitude de services pour pouvoir répondre au mieux à vos besoins en logiciels.</div>
       </div>
 
       <div class="container home__contact__body">
-        <div class="d-flex justify-content-center">
-          <div class="w-50 home__contact__body__infos">
+        <div class="row">
+          <div class="col-md-6 home__contact__body__infos">
             <h4 class="mb-3">Informations générales</h4>
             <dl>
               <dt class="text-success">Téléphone:</dt>
@@ -174,7 +178,7 @@
               <dd>contact@bogal.ca</dd>
             </dl>
           </div>
-          <div class="home__contact__body__form">
+          <div class="col-md-6 home__contact__body__form">
             <form [formGroup]="cuForm" (ngSubmit)="onSubmit()">
               <h4 class="mb-3 text-center">Envoyez-nous un courriel</h4>
               <hr>
