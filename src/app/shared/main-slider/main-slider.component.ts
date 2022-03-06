@@ -7,15 +7,15 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class MainSliderComponent implements OnInit {
   @Output() toggledMenu: EventEmitter<boolean> = new EventEmitter<boolean>();
-  showMenu = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  toggleMenu(): void {
-    this.toggledMenu.emit(this.showMenu);
+  closeMenu(): void {
+    console.log('0');
+    this.toggledMenu.emit(false);
   }
 
 }

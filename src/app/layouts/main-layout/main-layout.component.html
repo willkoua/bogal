@@ -1,7 +1,7 @@
 <div>
   <div class="container__header" *ngIf="enableMenu" [@enter] (@enter.done)="enterMenuDone($event)" [@leave]
        (@leave.done)="leaveMenuDone($event)">
-    <app-main-slider (onToggleMenu)="toggleMenu()" *ngIf="enableLink" [@bounceEnter] [@bounceLeave]></app-main-slider>
+    <app-main-slider (toggledMenu)="toggleMenu()" *ngIf="enableLink" [@bounceEnter] [@bounceLeave]></app-main-slider>
   </div>
 
   <div class="container__body">
