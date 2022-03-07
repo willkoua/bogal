@@ -41,7 +41,8 @@
 
     &__container {
       &__text {
-        padding: 0 20px;
+        padding: 0;
+        width: 40%;
 
         h1, h2 { margin: 0; }
 
@@ -51,10 +52,13 @@
         }
 
         h2 {
-          font-size: 3em;
+          font-size: 2em;
           position: relative;
           bottom: 45px;
-          color: black;
+          color: var(--bs-white);
+          //background-color: mat-color($bogal-primary, 800);
+          width: 100%;
+          padding-left: 10px;
         }
 
         p {
@@ -66,7 +70,7 @@
 
           span {
             font-weight: bold;
-            color: mat-color($bogal-primary, 800);
+            color: var(--bs-white);
           }
         }
       }
@@ -189,12 +193,14 @@
 
 @media screen and (max-width: 600px) {
   .home {
+    font-size: .8em;
+
     &__presentation {
-      padding-top: 15%;
-      padding-left: 30px;
+      padding-top: 25%;
+      padding-left: 10px;
       margin-bottom: 0 !important;
       background-color: mat-color($bogal-primary, 50);
-      min-height: 30vh !important;
+      min-height: 50vh !important;
       background-size: 183%;
 
       &__container>div {
@@ -204,13 +210,21 @@
       &__container {
         &__text {
           padding: 0px;
+          width: 100%;
 
           h1 { font-size: 5em; }
           h2 {
-            font-size: 2.2em;
+            font-size: 1.5em;
             bottom: 21px;
           }
-          p { font-size: 1em; }
+          p {
+            font-size: 1.2em;
+            width: 100%;
+            span {
+              display: inline-block;
+              color: var(--bs-white);
+            }
+          }
         }
       }
     }
