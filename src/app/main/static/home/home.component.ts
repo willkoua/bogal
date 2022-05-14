@@ -53,7 +53,6 @@ export class HomeComponent implements OnInit {
         this.submitted = false;
       },
       error => {
-        console.log(error.message);
         this.toastService.error('Une erreur est survenue lor de l\'envoie de l\'email');
         this.submitted = false;
       }
