@@ -14,7 +14,6 @@ export class MainSliderComponent implements OnInit {
   }
 
   closeMenu(): void {
-    console.log('0');
     this.toggledMenu.emit(false);
   }
 

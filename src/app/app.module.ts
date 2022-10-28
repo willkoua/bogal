@@ -52,9 +52,13 @@ function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     MatToolbarModule
   ],
   providers: [
-    {provide: LOCALE_ID, useValue: Const.app.lang.fr},
     {
-      provide: MESSAGE_FORMAT_CONFIG, useValue: {
+      provide: LOCALE_ID,
+      useValue: Const.app.lang.fr
+    },
+    {
+      provide: MESSAGE_FORMAT_CONFIG,
+      useValue: {
         locales: [
           Const.app.lang.fr,
           Const.app.lang.en

@@ -5,10 +5,7 @@
         <div class="home__presentation__container__text">
           <h1>BOGAL</h1>
           <h2>CONSULTINC INC.</h2>
-          <p>
-            Définir votre présence dans <br><span>le numérique</span><br> avec
-            des outils <span>développés sur mesure</span>.
-          </p>
+          <p [innerHTML]="'site.home.section1.text1' | translate"></p>
         </div>
         <!--<div class="home__presentation__container__img">
           <div class="home__presentation__container__img__wrapper">
@@ -28,21 +25,15 @@
   <section class="home__about">
     <div class="container">
       <div class="home__about__header">
-        <h2>Qui sommes-nous?</h2>
+        <h2>{{'site.home.section2.titre' | translate}}</h2>
       </div>
 
       <div class="home__about__body">
         <div class="row home__about__body__container">
           <div class="col-md-6 home__about__body__container__text">
-            <p>
-              <b>BOGAL Consulting Inc.</b> à été crée en 2019 par une équipe de jeune motivée ayant été formé dans les meilleures écoles d'ingénierie canadienne.
-              L'idée derrière ce projet est née de la volonté commune de développer des logiciels de manière professionnelle, structuré, à moindre coût
-              et surtout dans les meilleurs délais.
+            <p [innerHTML]="'site.home.section2.text1' | translate">
             </p>
-            <p>
-              L'équipe est dynamique, travaillant avec les meilleures pratiques d'ingénierie dans le domaine du logiciel.
-              Notre objectif principal étant d'offrir les meilleurs services à nos clients afin de garantir leur totale satisfaction.
-            </p>
+            <p>{{'site.home.section2.text2' | translate}}</p>
           </div>
           <div class="col-md-6 home__about__body__container__img">
             <img src="assets/images/bogal_home_work_top.jpg" class="img-fluid" alt="">
@@ -55,22 +46,22 @@
   <section id="values" class="home__values">
     <div class="container">
       <div class="home__values__header">
-        <h2>Nos valeurs</h2>
-        <div>Nous gardons en tête nos objectifs afin de s'assurer d'offrir à nos clients un qualité de service irréprochable et professionel.</div>
+        <h2>{{'site.home.section3.titre' | translate}}</h2>
+        <div>{{'site.home.section3.text1' | translate}}</div>
       </div>
 
       <div class="row home__values__body">
         <div class="col-md-4">
-          <img src="assets/images/bogal_home_meeting.svg" class="img-fluid" alt="">
-          <p>Respecter les <b>normes internationnales</b></p>
+          <img src="assets/images/bogal_home_meeting.svg" class="img-fluid" alt="bogal values - Respecter les normes internationnales">
+          <p [innerHTML]="'site.home.section3.value1' | translate"></p>
         </div>
         <div class="col-md-4">
-          <img src="assets/images/bogal_home_quality.svg" class="img-fluid" alt="">
-          <p><b>Qualité</b> plutôt quantité</p>
+          <img src="assets/images/bogal_home_quality.svg" class="img-fluid" alt="bogal values - Qualité plutôt quantité">
+          <p [innerHTML]="'site.home.section3.value2' | translate">></p>
         </div>
         <div class="col-md-4">
-          <img src="assets/images/bogal_home_consulting.svg" class="img-fluid" alt="">
-          <p>Assurer la <b>satisfaction</b> de nos clients</p>
+          <img src="assets/images/bogal_home_consulting.svg" class="img-fluid" alt="bogal values - Assurer la satisfaction de nos clients">
+          <p [innerHTML]="'site.home.section3.value3' | translate">></p>
         </div>
       </div>
     </div>
@@ -79,49 +70,49 @@
   <section id="service" class="home__services">
     <div class="container">
       <div class="home__services__header">
-        <h2>Nos services</h2>
-        <div>Nous proposons une multitude de services pour pouvoir répondre au mieux à vos besoins en logiciels.</div>
+        <h2>{{'site.home.section4.titre' | translate}}</h2>
+        <div>{{'site.home.section4.text1' | translate}}</div>
       </div>
       <div class="row home__services__body">
         <div class="col-md-3 home__services__body__service">
           <div><img src="assets/images/bogal_home_meeting_2.svg" alt="bogal service consultation"></div>
-          <div><h3>Consultation</h3></div>
+          <div><h3>{{'site.home.section4.lists.list1.title' | translate}}</h3></div>
           <div>
             <ul>
-              <li>Analyse de besoins</li>
-              <li>Gestion de projets</li>
-              <li>Rétro-ingénieurie</li>
+              <li>{{'site.home.section4.lists.list1.text1' | translate}}</li>
+              <li>{{'site.home.section4.lists.list1.text2' | translate}}</li>
+              <li>{{'site.home.section4.lists.list1.text3' | translate}}</li>
             </ul>
           </div>
         </div>
         <div class="col-md-3 home__services__body__service">
           <div><img src="assets/images/bogal_spec.svg" alt="bogal service Développement personnalisé"></div>
-          <div><h3>Développement personnalisé</h3></div>
+          <div><h3>{{'site.home.section4.lists.list2.title' | translate}}</h3></div>
           <div>
             <ul>
-              <li>Plateforme web (API/interface utilisateur)</li>
-              <li>Application mobile</li>
+              <li>{{'site.home.section4.lists.list2.text1' | translate}}</li>
+              <li>{{'site.home.section4.lists.list2.text2' | translate}}</li>
             </ul>
           </div>
         </div>
         <div class="col-md-3 home__services__body__service">
 
           <div><img src="assets/images/bogal_home_work.svg" alt="bogal service web design"></div>
-          <div><h3>Web Design</h3></div>
+          <div><h3>{{'site.home.section4.lists.list3.title' | translate}}</h3></div>
           <div>
             <ul>
-              <li>UX/UI</li>
-              <li>Site web</li>
+              <li>{{'site.home.section4.lists.list3.text1' | translate}}</li>
+              <li>{{'site.home.section4.lists.list3.text2' | translate}}</li>
             </ul>
           </div>
         </div>
         <div class="col-md-3 home__services__body__service">
           <div><img src="assets/images/bogal_home_design.svg" alt="bogal service Identité visuelle"></div>
-          <div><h3>Graphic Design</h3></div>
+          <div><h3>{{'site.home.section4.lists.list4.title' | translate}}</h3></div>
           <div>
             <ul>
-              <li>Identité visuelle</li>
-              <li>Logo</li>
+              <li>{{'site.home.section4.lists.list4.text1' | translate}}</li>
+              <li>{{'site.home.section4.lists.list4.text2' | translate}}</li>
             </ul>
           </div>
         </div>
@@ -132,17 +123,18 @@
   <section class="home__customer">
     <div class="home__customer__container">
       <div class="home__customer__header">
-        <h2>Nos clients</h2>
-        <div>Nous proposons une multitude de services pour pouvoir répondre au mieux à vos besoins en logiciels.</div>
+        <h2>{{'site.home.section5.title' | translate}}</h2>
+        <div>{{'site.home.section5.text1' | translate}}</div>
       </div>
 
       <div class="home__customer__body">
         <div class="container">
           <div class="home__customer__body__desktop">
             <div class="d-flex align-items-center">
-              <div><img class="img-fluid w-50" src="assets/images/customers/bogal_cjgm_logo.png" alt="cjgm logo"></div>
-              <div><img class="img-fluid w-50" src="assets/images/customers/bogal_fmch_logo.png" alt="fmch logo"></div>
-              <div><img class="img-fluid w-50" src="assets/images/customers/bogal_lelogos_logo.png" alt="le logos logo"></div>
+              <div>
+                <a target="_blank" href="https://cjgm.ca/"><img class="img-fluid w-50" src="assets/images/customers/bogal_cjgm_logo.png" alt="cjgm logo"></a></div>
+              <div><a target="_blank" href="https://www.fmch-montreal.org/"><img class="img-fluid w-50" src="assets/images/customers/bogal_fmch_logo.png" alt="fmch logo"></a></div>
+              <div><a target="_blank" href="https://lelogosplacements.ca/"><img class="img-fluid w-50" src="assets/images/customers/bogal_lelogos_logo.png" alt="le logos logo"></a></div>
               <!--<div><img class="img-fluid" src="assets/images/customers/bogal_light_logo.png" alt="lightcutoff logo"></div>
               <div><img class="img-fluid" src="assets/images/customers/bogal_bcbc_logo.png" alt="bcbc logo"></div>
               <div><img class="img-fluid" src="assets/images/customers/bogal_cadd_logo.png" alt="cadd logo"></div>-->
@@ -151,19 +143,19 @@
               <!--<div><img class="img-fluid" src="assets/images/customers/bogal_cjgm_logo.png" alt="cjgm logo"></div>
               <div><img class="img-fluid" src="assets/images/customers/bogal_fmch_logo.png" alt="fmch logo"></div>
               <div><img class="img-fluid" src="assets/images/customers/bogal_lelogos_logo.png" alt="le logos logo"></div>-->
-              <div><img class="img-fluid w-50" src="assets/images/customers/bogal_light_logo.png" alt="lightcutoff logo"></div>
-              <div><img class="img-fluid w-50" src="assets/images/customers/bogal_bcbc_logo.png" alt="bcbc logo"></div>
-              <div><img class="img-fluid w-50" src="assets/images/customers/bogal_cadd_logo.png" alt="cadd logo"></div>
+              <div><a target="_blank" href="https://lightcutoff.com/"><img class="img-fluid w-50" src="assets/images/customers/bogal_light_logo.png" alt="lightcutoff logo"></a></div>
+              <div><a target="_blank" href="https://www.montrealnord.cjgm.ca/project/sajj"><img class="img-fluid w-50" src="assets/images/customers/bogal_bcbc_logo.png" alt="bcbc logo"></a></div>
+              <div><a target="_blank" href="https://www.caddurable.com/"><img class="img-fluid w-50" src="assets/images/customers/bogal_cadd_logo.png" alt="cadd logo"></a></div>
             </div>
           </div>
           <div class="home__customer__body__mobile">
             <div class="">
-              <div><img class="img-fluid w-50" src="assets/images/customers/bogal_cjgm_logo.png" alt="cjgm logo"></div>
-              <div><img class="img-fluid w-50" src="assets/images/customers/bogal_fmch_logo.png" alt="fmch logo"></div>
-              <div><img class="img-fluid w-50" src="assets/images/customers/bogal_lelogos_logo.png" alt="le logos logo"></div>
-              <div><img class="img-fluid" src="assets/images/customers/bogal_light_logo.png" alt="lightcutoff logo"></div>
-              <div><img class="img-fluid" src="assets/images/customers/bogal_bcbc_logo.png" alt="bcbc logo"></div>
-              <div><img class="img-fluid" src="assets/images/customers/bogal_cadd_logo.png" alt="cadd logo"></div>
+              <div><a target="_blank" href="https://cjgm.ca/"><img class="img-fluid w-50" src="assets/images/customers/bogal_cjgm_logo.png" alt="cjgm logo"></a></div>
+              <div><a target="_blank" href="https://www.fmch-montreal.org/"><img class="img-fluid w-50" src="assets/images/customers/bogal_fmch_logo.png" alt="fmch logo"></a></div>
+              <div><a target="_blank" href="https://lelogosplacements.ca/"><img class="img-fluid w-50" src="assets/images/customers/bogal_lelogos_logo.png" alt="le logos logo"></a></div>
+              <div><a target="_blank" href="https://lightcutoff.com/"><img class="img-fluid" src="assets/images/customers/bogal_light_logo.png" alt="lightcutoff logo"></a></div>
+              <div><a target="_blank" href="https://www.montrealnord.cjgm.ca/project/sajj"><img class="img-fluid" src="assets/images/customers/bogal_bcbc_logo.png" alt="bcbc logo"></a></div>
+              <div><a target="_blank" href="https://www.caddurable.com/"><img class="img-fluid" src="assets/images/customers/bogal_cadd_logo.png" alt="cadd logo"></a></div>
             </div>
           </div>
         </div>
@@ -174,66 +166,66 @@
   <section id="contact" class="home__contact">
     <div class="container home__contact__container">
       <div class="home__contact__header">
-        <h2>Nous contacter</h2>
-        <div>Nous proposons une multitude de services pour pouvoir répondre au mieux à vos besoins en logiciels.</div>
+        <h2>{{'site.home.section6.title' | translate}}</h2>
+        <div>{{'site.home.section6.text1' | translate}}</div>
       </div>
 
       <div class="container home__contact__body">
         <div class="row">
           <div class="col-md-6 home__contact__body__infos">
-            <h4 class="mb-3">Informations générales</h4>
+            <h4 class="mb-3">{{'site.home.section6.infos.title' | translate}}</h4>
             <dl>
-              <dt class="text-success">Téléphone:</dt>
+              <dt class="text-success">{{'site.home.section6.infos.tel' | translate}}</dt>
               <dd>(514) 431-9459</dd>
-              <dt class="text-success">Email:</dt>
+              <dt class="text-success">{{'site.home.section6.infos.email' | translate}}</dt>
               <dd>contact@bogal.ca</dd>
             </dl>
           </div>
           <div class="col-md-6 home__contact__body__form">
             <form [formGroup]="cuForm" (ngSubmit)="onSubmit()">
-              <h4 class="mb-3 text-center">Envoyez-nous un courriel</h4>
+              <h4 class="mb-3 text-center">{{'site.home.section6.form.title' | translate}}</h4>
               <hr>
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" formControlName="name"
                          [ngClass]="{ 'is-invalid': submitted && f.name.errors }"
-                         placeholder="Nom" required>
+                         placeholder="{{'site.home.section6.form.name' | translate}}" required>
                   <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
-                    <div *ngIf="f.name.errors.required">Nom requis</div>
+                    <div *ngIf="f.name.errors.required">{{'site.home.section6.form.required_name' | translate}}</div>
                   </div>
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" formControlName="email"
-                         [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                  <input type="email" class="form-control" name="{{'site.home.section6.form.name' | translate}}"
+                         formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
                          placeholder="Email" required>
                   <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                    <div *ngIf="f.email.errors.email">Erreur Email</div>
-                    <div *ngIf="f.email.errors.required">Email requis</div>
+                    <div *ngIf="f.email.errors.email">{{'site.home.section6.form.err_email' | translate}}</div>
+                    <div *ngIf="f.email.errors.required">{{'site.home.section6.form.required_email' | translate}}</div>
                   </div>
                 </div>
 
                 <div class="col-md-12">
                   <input type="email" class="form-control" name="email" formControlName="subject"
                          [ngClass]="{ 'is-invalid': submitted && f.subject.errors }"
-                         placeholder="Sujet" required>
+                         placeholder="{{'site.home.section6.form.subject' | translate}}" required>
                   <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
-                    <div *ngIf="f.subject.errors.required">Sujet requis</div>
+                    <div *ngIf="f.subject.errors.required">{{'site.home.section6.form.required_subject' | translate}}</div>
                   </div>
                 </div>
 
                 <div class="col-md-12">
                 <textarea class="form-control" name="message" rows="6" formControlName="message"
                           [ngClass]="{ 'is-invalid': submitted && f.message.errors }"
-                          placeholder="Message" required></textarea>
+                          placeholder="{{'site.home.section6.form.message' | translate}}" required></textarea>
                   <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
-                    <div *ngIf="f.message.errors.required">Message requis</div>
+                    <div *ngIf="f.message.errors.required">{{'site.home.section6.form.required_message' | translate}}</div>
                   </div>
                 </div>
 
                 <div class="col-md-12 text-center">
                   <button class="btn btn-success" type="submit" [disabled]="submitted">
-                    <span *ngIf="!submitted">Envoyer</span>
+                    <span *ngIf="!submitted">{{'site.home.section6.form.submit' | translate}}</span>
                     <span *ngIf="submitted" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     <span *ngIf="submitted">Loading...</span>
                   </button>

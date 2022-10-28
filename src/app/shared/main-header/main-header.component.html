@@ -12,4 +12,14 @@
   <div class="header__logo header--dark__logo ">
     <a href="/">BOGAL</a>
   </div>
+  <div class="header__lang">
+    <ul class="list-inline header__lang__group header__lang__group-big">
+      <li *ngIf="currentLang === en" class="list-inline-item"><a (click)="toggleLang('fr')">Francais</a></li>
+      <li *ngIf="currentLang === fr" class="list-inline-item"><a (click)="toggleLang('en')">English</a></li>
+    </ul>
+    <ul class="list-inline header__lang__group header__lang__group-small">
+      <li *ngIf="currentLang === en" class="list-inline-item"><a (click)="toggleLang('fr')">Fr</a></li>
+      <li *ngIf="currentLang === fr" class="list-inline-item"><a (click)="toggleLang('en')">En</a></li>
+    </ul>
+  </div>
 </nav>
