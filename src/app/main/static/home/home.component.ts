@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {UntypedFormControl, UntypedFormGroup, Validators} from '@angular/forms';
 import {MailService} from '../../../core/services-firebase/mail.service';
 import {ToastrService} from 'ngx-toastr';
+import {Const} from '../../../../environments/const';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,9 @@ import {ToastrService} from 'ngx-toastr';
 export class HomeComponent implements OnInit {
   submitted = false;
   cuForm: UntypedFormGroup;
+  currentLang: string;
+  fr = Const.app.lang.fr;
+  en = Const.app.lang.en;
 
   constructor(
     private mailService: MailService,

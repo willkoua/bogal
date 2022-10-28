@@ -7,13 +7,13 @@
   transition: all 1s;
   overflow: hidden;
 
-  &__menu, &__second {
+  &__menu, &__second, &__lang {
     padding-top: 10px;
   }
 
   &__menu {
     justify-content: flex-start;
-    &__btn {
+    &__btn{
       a { cursor: pointer; }
     }
   }
@@ -27,6 +27,18 @@
 
     a {
       text-decoration: none;
+    }
+  }
+
+  &__lang {
+    &__group {
+      li a { cursor: pointer !important; }
+    }
+    &__group-big {
+      display: block;
+    }
+    &__group-small {
+      display: none;
     }
   }
 
@@ -107,5 +119,13 @@
         }
       }
     }*/
+    &__lang {
+      &__group-big {
+        display: none;
+      }
+      &__group-small {
+        display: block;
+      }
+    }
   }
 }
