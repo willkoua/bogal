@@ -5,6 +5,7 @@ import { MainFooterComponent } from './main-footer/main-footer.component';
 import { MainSliderComponent } from './main-slider/main-slider.component';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {TranslateModule} from '@ngx-translate/core';
 
 
 @NgModule({
@@ -18,10 +19,11 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MainFooterComponent,
     MainSliderComponent
   ],
-  imports: [
-    CommonModule,
-    MatSliderModule,
-    MatSidenavModule,
-  ]
+    imports: [
+        CommonModule,
+        MatSliderModule,
+        MatSidenavModule,
+        TranslateModule,
+    ]
 })
 export class SharedModule { }

@@ -17,15 +17,12 @@ import {
     bounceOutOnLeaveAnimation({ anchor: 'bounceLeave', duration: 1000, delay: 100 }),
   ]
 })
-export class MainLayoutComponent implements OnInit {
+export class MainLayoutComponent {
   showMenu = false;
   enableLink = false;
   enableMenu = false;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
   toggleMenu(): void {
     this.showMenu = !this.showMenu;

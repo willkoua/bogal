@@ -5,6 +5,7 @@ import { StaticRoutingModule } from './static-routing.module';
 import { HomeComponent } from './home/home.component';
 import {SharedModule} from '../../shared/shared.module';
 import {ReactiveFormsModule} from '@angular/forms';
+import {TranslateModule} from '@ngx-translate/core';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {ReactiveFormsModule} from '@angular/forms';
         CommonModule,
         StaticRoutingModule,
         SharedModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        TranslateModule
     ]
 })
 export class StaticModule { }

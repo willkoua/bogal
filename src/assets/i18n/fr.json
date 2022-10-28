@@ -1,0 +1,87 @@
+{
+  "site": {
+    "header": {
+      "menu": {
+        "home": "Accueil",
+        "about": "À propos",
+        "values": "Nos valeurs",
+        "services": "Nos services",
+        "contact": "Contactez-nous"
+      }
+    },
+    "home": {
+      "section1": {
+        "text1": "Définir votre présence dans <br><span>le numérique</span><br> avec des outils <span>développés sur mesure</span>."
+      },
+      "section2": {
+        "titre": "Qui sommes-nous?",
+        "text1": "<b>BOGAL Consulting Inc.</b> à été crée en 2019 par une équipe de jeune motivée ayant été formé dans les meilleures écoles d'ingénierie canadienne. L'idée derrière ce projet est née de la volonté commune de développer des logiciels de manière professionnelle, structuré, à moindre coût et surtout dans les meilleurs délais.",
+        "text2": "L'équipe est dynamique, travaillant avec les meilleures pratiques d'ingénierie dans le domaine du logiciel. Notre objectif principal étant d'offrir les meilleurs services à nos clients afin de garantir leur totale satisfaction."
+      },
+      "section3": {
+        "titre": "Nos valeurs",
+        "text1": "Nous gardons en tête nos objectifs afin de s'assurer d'offrir à nos clients un qualité de service irréprochable et professionel.",
+        "value1": "Respecter les <b>normes internationnales</b>",
+        "value2": "<b>Qualité</b> plutôt quantité",
+        "value3": "Assurer la <b>satisfaction</b> de nos clients"
+      },
+      "section4": {
+        "titre": "Nos services",
+        "text1": "Nous proposons une multitude de services pour pouvoir répondre au mieux à vos besoins en logiciels.",
+        "lists": {
+          "list1": {
+            "title": "Consultation",
+            "text1": "Analyse de besoins",
+            "text2": "Gestion de projets",
+            "text3": "Rétro-ingénieurie"
+          },
+          "list2": {
+            "title": "Développement personnalisé",
+            "text1": "Plateforme web (API/interface utilisateur)",
+            "text2": "Application mobile"
+          },
+          "list3": {
+            "title": "Web Design",
+            "text1": "UX/UI",
+            "text2": "Site web"
+          },
+          "list4": {
+            "title": "Graphic Design",
+            "text1": "Identité visuelle",
+            "text2": "Logo"
+          }
+        }
+      },
+      "section5": {
+        "title": "Nos clients",
+        "text1": "Ils nous font confiance."
+      },
+      "section6": {
+        "title": "Nous contacter",
+        "text1": "Envoyez nous un message. Nous pourrons surement vous aider.",
+        "infos": {
+          "title": "Informations générales",
+          "tel": "Téléphone:",
+          "email": "Email"
+        },
+        "form": {
+          "title": "Envoyez-nous un courriel",
+          "name": "Nom",
+          "required_name": "Nom requis",
+          "email": "Email",
+          "required_email": "Email requis",
+          "err_email": "Erreur email",
+          "subject": "Sujet",
+          "required_subject": "Sujet requis",
+          "message": "Message",
+          "required_message": "Message requis",
+          "submit": "Envoyer"
+        }
+      }
+    },
+    "footer": {
+      "reserved": "Tous droits réservés."
+    }
+  }
+}
+

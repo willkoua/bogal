@@ -1,0 +1,87 @@
+{
+  "site": {
+    "header": {
+      "menu": {
+        "home": "Home",
+        "about": "About",
+        "values": "Our values",
+        "services": "Our services",
+        "contact": "Contact us"
+      }
+    },
+    "home": {
+      "section1": {
+        "text1": "Define your <br><span>digital presence</span><br> with <span>tailor-made</span> tools."
+      },
+      "section2": {
+        "titre": "Who are we?",
+        "text1": "<b>BOGAL Consulting Inc.</b> was created in 2019 by a team of motivated young people who were trained in the best Canadian engineering schools. The idea behind this project was born from the common desire to develop software in a professional, structured way, at a lower cost and above all as quickly as possible.",
+        "text2": "The team is dynamic, working with the best engineering practices in the field of software. Our main objective is to offer the best services to our customers in order to guarantee their total satisfaction."
+      },
+      "section3": {
+        "titre": "Our values",
+        "text1": "We keep our objectives in mind to ensure that we offer our customers an irreproachable and professional quality of service.",
+        "value1": "Comply with <b>international standards</b>",
+        "value2": "<b>Quality</b> rather quantity",
+        "value3": "Ensuring the <b>satisfaction</b> of our customers"
+      },
+      "section4": {
+        "titre": "Our services",
+        "text1": "We offer a multitude of services to best meet your software needs.",
+        "lists": {
+          "list1": {
+            "title": "Consultation",
+            "text1": "Needs analysis",
+            "text2": "Project management",
+            "text3": "reverse engineering"
+          },
+          "list2": {
+            "title": "Custom development",
+            "text1": "Web platform (API/UI)",
+            "text2": "Mobile app"
+          },
+          "list3": {
+            "title": "Web Design",
+            "text1": "UX/UI",
+            "text2": "Website"
+          },
+          "list4": {
+            "title": "Graphic Design",
+            "text1": "Visual identity",
+            "text2": "Logo"
+          }
+        }
+      },
+      "section5": {
+        "title": "Our clients",
+        "text1": "They trust us."
+      },
+      "section6": {
+        "title": "Contact us",
+        "text1": "Send us a message. We can surely help you",
+        "infos": {
+          "title": "General informations",
+          "tel": "Telephone:",
+          "email": "Email:"
+        },
+        "form": {
+          "title": "Email us",
+          "name": "Name",
+          "required_name": "Name required",
+          "email": "Email",
+          "required_email": "Email required",
+          "err_email": "email error",
+          "subject": "Subject",
+          "required_subject": "Subject required",
+          "message": "Message",
+          "required_message": "Message required",
+          "submit": "Submit"
+        }
+      }
+    },
+    "footer": {
+      "reserved": "All rights reserved."
+    }
+  }
+}
+
