@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormControl, UntypedFormGroup, Validators} from '@angular/forms';
 import {MailService} from '../../../core/services-firebase/mail.service';
 import {ToastrService} from 'ngx-toastr';
 
@@ -10,7 +10,7 @@ import {ToastrService} from 'ngx-toastr';
 })
 export class HomeComponent implements OnInit {
   submitted = false;
-  cuForm: FormGroup;
+  cuForm: UntypedFormGroup;
 
   constructor(
     private mailService: MailService,
@@ -25,11 +25,11 @@ export class HomeComponent implements OnInit {
   get f(): any { return this.cuForm.controls; }
 
   private initForm(): void {
-    this.cuForm = new FormGroup({
-      name: new FormControl(''),
-      subject: new FormControl('', [Validators.required]),
-      message: new FormControl('', [Validators.required]),
-      email: new FormControl('', [Validators.required, Validators.email]),
+    this.cuForm = new UntypedFormGroup({
+      name: new UntypedFormControl(''),
+      subject: new UntypedFormControl('', [Validators.required]),
+      message: new UntypedFormControl('', [Validators.required]),
+      email: new UntypedFormControl('', [Validators.required, Validators.email]),
     });
   }
 
